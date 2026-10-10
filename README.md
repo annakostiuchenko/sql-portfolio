@@ -5,8 +5,8 @@ All queries run in **DuckDB** (via DBeaver) on public data.
 
 | Project | What the SQL does | Techniques |
 | --- | --- | --- |
-| [Customer retention](customer-retention/customer_retention.sql) | Cleans ~1M order lines of a UK online retailer, builds monthly cohorts and RFM customer segments | CTEs, window functions (`FIRST_VALUE`, `NTILE`), `FILTER` aggregates, data-quality checks |
-| [Dutch housing market](dutch-housing/nl_housing.sql) | Joins 30 years of CBS house-price data for all municipalities, handles merged municipalities, ranks growth with 3-year averages | Joins on code tables, `FILTER` pivots, `RANK()`, `UNION ALL`, sanity checks |
+| [Customer retention](customer_retention.sql) | Cleans ~1M order lines of a UK online retailer, builds monthly cohorts and RFM customer segments | CTEs, window functions (`FIRST_VALUE`, `NTILE`), `FILTER` aggregates, data-quality checks |
+| [Dutch housing market](nl_housing.sql) | Joins 30 years of CBS house-price data for all municipalities, handles merged municipalities, ranks growth with 3-year averages | Joins on code tables, `FILTER` pivots, `RANK()`, `UNION ALL`, sanity checks |
 
 ## Data
 - **Online Retail II**: UCI Machine Learning Repository, https://archive.ics.uci.edu/dataset/502/online+retail+ii
